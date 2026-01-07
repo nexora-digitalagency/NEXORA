@@ -5246,18 +5246,27 @@ figure {
         display: block;
         position: relative;
         inset: auto;
-        margin: 0 auto 32px auto;
-        width: 90%;
-        max-width: 400px;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .hero-overflow-right-image {
         display: block;
         position: relative;
         inset: auto;
-        margin: 0 auto;
-        width: 90%;
-        max-width: 400px;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-overflow-left-image img,
+    .hero-overflow-right-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .work-hero-image {
