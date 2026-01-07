@@ -5252,7 +5252,7 @@ figure {
         display: block;
         position: relative;
         inset: auto;
-        margin: 0 auto 12px 5%;
+        margin: 0 5% 20px auto;
         width: 70%;
         max-width: 250px;
         height: auto;
@@ -5263,7 +5263,7 @@ figure {
         display: block;
         position: relative;
         inset: auto;
-        margin: 0 5% 12px auto;
+        margin: 0 auto 20px 5%;
         width: 70%;
         max-width: 250px;
         height: auto;
