@@ -4896,8 +4896,8 @@ figure {
     }
 
     .section.page-hero {
-        margin-top: 0;
-        padding-top: 120px;
+        margin-top: 0 !important;
+        padding-top: 150px !important;
         padding-bottom: 60px;
     }
 
