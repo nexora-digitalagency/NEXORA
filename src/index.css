@@ -4816,13 +4816,18 @@ figure {
 
     .hero-button-group {
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: row;
+        gap: 10px;
         width: 100%;
+        justify-content: center;
     }
 
     .hero-button-group .button {
-        width: 100%;
+        width: auto;
+        flex: 1;
+        font-size: 12px;
+        padding: 8px 12px;
+        white-space: nowrap;
     }
 
     .hero-overflow-left-image {
@@ -4897,7 +4902,7 @@ figure {
 
     .section.page-hero {
         margin-top: 0 !important;
-        padding-top: 140px !important;
+        padding-top: 12px !important;
         padding-bottom: 60px;
         display: flex !important;
         flex-direction: column !important;
@@ -5008,7 +5013,7 @@ figure {
     }
 
     .paragraph.x-large {
-        font-size: 20px;
+        font-size: 13px;
     }
 
     .ds-menu-brand {
@@ -5380,7 +5385,7 @@ figure {
     .heading.xl-h1,
     .heading.h1-l {
         letter-spacing: -1px;
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .error2 {
