@@ -4897,8 +4897,10 @@ figure {
 
     .section.page-hero {
         margin-top: 0 !important;
-        padding-top: 180px !important;
+        padding-top: 140px !important;
         padding-bottom: 60px;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .section.light-grey-hero {
@@ -4947,11 +4949,16 @@ figure {
         position: static;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        max-width: 100%;
     }
 
     .home-hero-text-box {
         order: -1;
         margin-bottom: 40px;
+        position: relative;
+        z-index: 10;
+        width: 100%;
     }
 
     .column._11-column,
