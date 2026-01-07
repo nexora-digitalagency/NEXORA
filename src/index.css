@@ -4896,9 +4896,9 @@ figure {
     }
 
     .section.page-hero {
-        margin-top: -100px;
-        padding-top: 60px;
-        padding-bottom: 120px;
+        margin-top: 0;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     .section.light-grey-hero {
@@ -4945,6 +4945,13 @@ figure {
 
     .container.center-align.mobile-static {
         position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-hero-text-box {
+        order: -1;
+        margin-bottom: 40px;
     }
 
     .column._11-column,
@@ -5227,8 +5234,8 @@ figure {
         display: block;
         position: relative;
         inset: auto;
-        margin: 20px auto;
-        width: 80%;
+        margin: 0 auto 32px auto;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -5236,8 +5243,8 @@ figure {
         display: block;
         position: relative;
         inset: auto;
-        margin: 20px auto;
-        width: 80%;
+        margin: 0 auto;
+        width: 90%;
         max-width: 400px;
     }
 
