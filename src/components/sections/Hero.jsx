@@ -25,13 +25,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="home-hero-text-box">
-                    <h1 data-w-id="2cde7c12-d3c7-1c61-55e1-cb66eb3e145c" className="heading h1-l">Reach More Buyers. <span className="home-underline-link">Sell</span> More Properties.</h1>
-                    <div data-w-id="98c0b5ef-fc1b-1302-400e-f88ce2a10db2"
-                        className="text-box center-align">
+                    <h1 className="heading h1-l">Reach More Buyers. <span className="home-underline-link">Sell</span> More Properties.</h1>
+                    <div className="text-box center-align">
                         <p className="paragraph x-large _64-opacity">Maximise your Real Estate growth. We help developers and realtors generate high-quality leads using powerful content and video marketing.</p>
                         <div className="spacer _24 mobile-small"></div>
                     </div>
-                    <div className="button-group" style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
+                    <div className="hero-button-group">
                         <a href="#contact" className="button blue w-button">Get Free Strategy</a>
                         <a href="#services" className="button w-button">See Our Work</a>
                     </div>
