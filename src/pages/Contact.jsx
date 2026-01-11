@@ -19,15 +19,23 @@ const Contact = () => {
         const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
         const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+        if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+            console.error('Missing EmailJS environment variables. Please check your .env file.');
+            console.log({ SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY });
+            setError('Configuration Error: Missing credentials. Please check console.');
+            setIsLoading(false);
+            return;
+        }
+
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
                 setIsLoading(false);
                 setIsSubmitted(true);
             }, (error) => {
-                console.log(error.text);
+                console.error('EmailJS Error:', error);
                 setIsLoading(false);
-                setError('Something went wrong. Please try again later or email us directly.');
+                setError(`Failed to send: ${error.text || 'Unknown error'}`);
             });
     };
     return (
