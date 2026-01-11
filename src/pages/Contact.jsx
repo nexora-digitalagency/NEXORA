@@ -29,7 +29,20 @@ const Contact = () => {
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
-                console.log(result.text);
+                console.log('Main email sent:', result.text);
+
+                // --- Auto-Reply Logic ---
+                const AUTO_REPLY_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID;
+                if (AUTO_REPLY_TEMPLATE_ID) {
+                    // We use sendForm again because the form inputs match the variables needed 
+                    // (user_name, user_email, service_interest).
+                    // If the template expects variables that are NOT in the form input names,
+                    // we would use emailjs.send(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, { ...params }, PUBLIC_KEY) instead.
+                    emailjs.sendForm(SERVICE_ID, AUTO_REPLY_TEMPLATE_ID, form.current, PUBLIC_KEY)
+                        .then((res) => console.log('Auto-reply sent:', res.text))
+                        .catch((err) => console.error('Auto-reply failed:', err));
+                }
+
                 setIsLoading(false);
                 setIsSubmitted(true);
             }, (error) => {
