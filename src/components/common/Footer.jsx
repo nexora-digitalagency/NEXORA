@@ -62,7 +62,7 @@ const Footer = () => {
                         {/* Social Icons */}
                         <a href="#" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
                         <a href="#" target="_blank" rel="noopener noreferrer" className="social-link">Twitter</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
+                        <a href="https://www.instagram.com/nexoradigital92" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
                     </div>
                 </div>
 
